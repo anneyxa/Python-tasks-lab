@@ -32,7 +32,7 @@ def selection_sort_stable(a):  # this one is stable
         for j in range(i + 1, n):
             if a[j] < a[index_min]:
                 index_min = j
-            current_min = a[index_min]
+            current_min = a[index_min]    # czy linijki 35-39 nie powinny mieć jedno wcięcie mniej?
             while index_min > i:
                 a[index_min] = a[index_min - 1]
                 index_min -= 1
