@@ -9,7 +9,7 @@ import string
 # ------|-------------|-------|---------|----------|----------------------
 #   q1  |   qn        |  +1   |   -1    |  qn      |     q0, ->
 
-class LogicChecker:
+class LogicExprChecker:
 
     def __init__(self, expression: str):
         self.expression = expression.replace(" ", "")
@@ -36,7 +36,7 @@ class LogicChecker:
             self.q1_step(x)
 
     def q0_step(self, x):
-        if x in string.ascii_lowercase:
+        if x in string.ascii_lowercase or x in string.digits:
             self.current_state = 'q1'
         elif x == '~':
             pass
