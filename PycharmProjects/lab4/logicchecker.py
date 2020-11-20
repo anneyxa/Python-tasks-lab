@@ -16,7 +16,7 @@ class LogicExprChecker:
         self.current_state = 'q0'
         self.bracket_counter = 0
 
-    def __call__(self):
+    def __call__(self): # mało intuicyjny iterfejs
         if len(self.expression) == 0:
             return False
         for x in self.expression:
