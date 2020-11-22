@@ -20,7 +20,8 @@ class Figure:
 
     def scale(self, ratio):
         ratio = validate_ratio(ratio)
-        self.size *= ratio
+        for index, val in enumerate(self.size):
+            self.size[index] *= ratio
 
     def rotate(self, angle):
         angle = validate_angle(angle)
@@ -49,7 +50,7 @@ class Circle(Figure):
         super().__init__(name, *size)
 
     def __str__(self):
-        return f'Circle: {super().__str__()}'
+        return f'Circle ({super().__str__()})'
 
 
 class Square(Figure):

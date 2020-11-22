@@ -34,7 +34,7 @@ def validate_size_expected(size, expected):
 
 def validate_ratio(ratio):
     if ratio.isnumeric() and ratio != 0:
-        return ratio
+        return int(ratio)
     else:
         raise ValueError('Ratio must be a non-zero number.')
 
