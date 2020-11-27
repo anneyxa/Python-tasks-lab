@@ -57,7 +57,7 @@ class Program:
         return action, parameters
 
     def run(self):
-        while 1:
+        while 1:    # while True
             try:
                 command = input('Type command: ')
                 action, parameters = self.parse_command(command)
@@ -73,9 +73,9 @@ class Program:
                 else:
                     self.run_figures(action, parameters)
             except (ValueError, IndexError, TypeError) as e:
-                print(e)
+                print(e)    # add_figure() missing 1 required positional argument: 'name' - mało czytelny komunikat
 
-    def run_figures(self, action, parameters):
+    def run_figures(self, action, parameters):  # nieczytelna nazwa
         name = check_name_exists(parameters[0], self.figures.keys())
         params = parameters[1:]
         if action == 'move':

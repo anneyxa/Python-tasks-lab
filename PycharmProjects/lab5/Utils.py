@@ -33,7 +33,7 @@ def validate_size_expected(size, expected):
 
 
 def validate_ratio(ratio):
-    if ratio.isnumeric() and ratio != 0:
+    if ratio.isnumeric() and ratio != 0:    # przekazuje Pani stringa do tej funkcji, więc drugi warunek zawsze jest spełniony ("0" != 0) - najpierw trzeba przekonwertować
         return int(ratio)
     else:
         raise ValueError('Ratio must be a non-zero number.')
