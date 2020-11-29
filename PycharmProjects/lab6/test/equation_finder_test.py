@@ -6,6 +6,7 @@ from equations_finder import find_equation
 class TestEquationFinder(unittest.TestCase):
     def test_find_equation_same_points(self):
         self.assertRaises(ValueError, find_equation, (0, 1), (0, 1))
+        self.assertRaises(ValueError, find_equation, (0, -1.324), (0, -1.324))
 
     def test_find_equation_different_points(self):
         self.assertEqual(find_equation((1, 2), (3, 4)), "y=1.0x+1.0")
