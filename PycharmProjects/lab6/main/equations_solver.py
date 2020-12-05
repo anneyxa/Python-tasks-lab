@@ -1,11 +1,11 @@
-def count_equation(a, b, c):
+def count_equation(a, b, c):    # solve
     try:
         if a == 0:
             return count_linear_equation(b, c)
         else:
             return count_quadratic_equation(a, b, c)
     except ValueError as e:
-        print(e)
+        print(e)    # nie wolno printować
 
 
 def count_quadratic_equation(a, b, c):
@@ -19,7 +19,7 @@ def count_quadratic_equation(a, b, c):
         x0 = (-b / (2 * a))
         return x0
     else:
-        raise ValueError("Equation has no solutions")
+        raise ValueError("Equation has no solutions")   # sugeruję stworzyć własny typ wyjątku
 
 
 def count_linear_equation(a, b):
