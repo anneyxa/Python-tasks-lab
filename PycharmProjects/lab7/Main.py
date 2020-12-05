@@ -16,7 +16,7 @@ def divide_train_test_data(data, labels, divisor):
 
 if __name__ == '__main__':
     dp = DataParser()
-    dp.read_data_as_arr("sample3.csv") # alternatywnie mozna podmienic na sample1, sample2 i sample3
+    dp.read_data_as_arr("sample3.csv")  # alternatywnie mozna podmienic na sample1, sample2 i sample3
     dp.normalize_rows()
     p = Perceptron()
     train_data, test_data, train_labels, test_labels = divide_train_test_data(dp.data_arr, dp.label, 30)

@@ -1,9 +1,7 @@
 import numpy as np
 
 
-# f(w,b) = w^T*x + b
-# y = g(f(w,b)) = g(w^T*x + b)
-# jako dodatkowa pomoc służył mi filmik https://www.youtube.com/watch?v=t2ym2a3pb_Y&t=943s
+# jako dodatkowa pomoc służył mi filmik https://www.youtube.com/watch?v=t2ym2a3pb_Y
 class Perceptron:
 
     def __init__(self, learning_rate=0.01, number_of_iterations=1000):
