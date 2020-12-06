@@ -12,7 +12,7 @@ class Perceptron:
         self.bias = None
 
     def train(self, train_data, train_label):
-        rows, columns = np.array(train_data).shape  # n - rows: samples, m - columns: features
+        rows, columns = np.array(train_data).shape
         self.weights = np.zeros(columns)  # inicjalizacja wag, na początku zera
         self.bias = 0
         for x in range(self.number_of_iterations):  # wykonujemy np. 1000 iteracji, aby nauczyć model
