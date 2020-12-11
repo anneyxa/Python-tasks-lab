@@ -25,7 +25,7 @@ class DataParser:
     def normalize_rows(self):  # przez standaryzację
         self.data_exists()
         i = 0
-        while i < self.data_arr.shape[0]:
+        while i < self.data_arr.shape[0]:   # numpy wykonuje operacje element po elemencie nieporównywalnie szybciej niż działa taka pętla
             row = self.data_arr[i, :]
             mean = row.mean()
             std = row.std()
@@ -38,7 +38,7 @@ class DataParser:
         self.data_exists()
         self.data_arr = self.data_arr / np.linalg.norm(self.data_arr, ord=2, axis=1, keepdims=True)
 
-    def normalize_rows_l1(self):
+    def normalize_rows_l1(self):    # DRY - wystarczyłoby przyjąć parametr ord, mógłby być z wartością domyślną
         self.data_exists()
         self.data_arr = self.data_arr / np.linalg.norm(self.data_arr, ord=1, axis=1, keepdims=True)
 
