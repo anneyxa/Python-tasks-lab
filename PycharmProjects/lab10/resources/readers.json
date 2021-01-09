@@ -2,16 +2,25 @@
   {
     "name": "Anna",
     "surname": "Urban",
-    "login": "anneyxa"
+    "login": "anneyxa",
+    "password": "anneyxapass"
   },
   {
     "name": "Katarzyna",
     "surname": "Nowak",
-    "login": "ziomek123"
+    "login": "ziomek123",
+    "password": "ziomek123pass"
   },
   {
     "name": "Jan",
     "surname": "Kowalski",
-    "login": "janek01"
+    "login": "janek01",
+    "password": "janek01pass"
+  },
+  {
+    "name": "Mateusz",
+    "surname": "Machalica",
+    "login": "macha",
+    "password": "machamacha"
   }
 ]

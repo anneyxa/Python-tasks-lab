@@ -2,16 +2,19 @@
   {
     "name": "Basia",
     "surname": "Tralala",
-    "login": "bas01"
+    "login": "bas01",
+    "password": "bas01pass"
   },
   {
     "name": "Hubert",
     "surname": "Nowakowski",
-    "login": "hubcio"
+    "login": "hubcio",
+    "password": "hubciopass"
   },
   {
     "name": "Jakub",
     "surname": "Kowalewski",
-    "login": "kubson"
+    "login": "kubson",
+    "password": "kubsonpass"
   }
 ]
