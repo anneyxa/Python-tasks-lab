@@ -39,7 +39,7 @@ class LibrarySystemManager:
             print(f'There is no rent book with id: {book_id}')
 
     def run_add_new_book(self):
-        next_free_id = self.library.books[0].id
+        next_free_id = self.library.books[0].id # myląca nazwa
         for book in self.library.books:
             if book.id > next_free_id:
                 next_free_id = book.id
@@ -108,7 +108,7 @@ class LibrarySystemManager:
                 if self.logged_person is None:
                     self.login()
                 else:
-                    if type(self.logged_person) == Employee:  # ----------------------Employee--------------------
+                    if type(self.logged_person) == Employee:  # ----------------------Employee--------------------  # przydałaby się dekompozycja
                         print("1. Manage book return")
                         print("2. Add new book")
                         print("3. Delete book")
@@ -141,7 +141,7 @@ class LibrarySystemManager:
                         print("3. Search for a book")
                         print("4. Log out")
                         print("5. Exit")
-                        option = int(input())
+                        option = int(input())   # DRY
                         if option == 1:
                             self.run_list_books()
                         elif option == 2:

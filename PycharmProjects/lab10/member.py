@@ -11,7 +11,7 @@ class LibraryMember:
         return f'(name: {self.name}, surname: {self.surname}, login: {self.login}, password: (password))'
 
 
-class Reader(LibraryMember):
+class Reader(LibraryMember):    # te dwie klasy nic nie wnoszą + mogłyby być puste
 
     def __init__(self, name, surname, login, password):
         super().__init__(name, surname, login, password)

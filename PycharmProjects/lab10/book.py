@@ -11,6 +11,6 @@ class Book:
         return f'(title: {self.title}, author: {self.author}, year: {self.year}, ID: {self.id})'
 
     def __contains__(self, phrase):
-        if phrase in f'{self.title} {self.author} {self.year} {self.id}':
+        if phrase in f'{self.title} {self.author} {self.year} {self.id}':   # return warunek
             return True
         return False
